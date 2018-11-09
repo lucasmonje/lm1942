@@ -1,0 +1,612 @@
+{
+    "Player": {
+        "ResourcePath": "Assets/Resources/Prefabs/Player.prefab",
+        "Speed": 40,
+        "Lives": 3,
+        "Health": 2,
+        "FireRate": 30,
+        "LimitLeft": 100,
+        "LimitRight": 100,
+        "LimitTop": 100,
+        "LimitBottom": 100,
+        "GunDto": {
+            "Name": "PlayerGun",
+            "ResourcePath": "Assets/Resources/Prefabs/Bullet02.prefab",
+            "Damage": 1,
+            "AmountBullets": 0,
+            "ToPosition": 81,
+            "Speed": 8
+        }
+    },
+    "AllEnemies": [
+        {
+            "Name": "enemy01-path01",
+            "ResourcePath": "Assets/Resources/Prefabs/Enemy01.prefab",
+            "Speed": 2,
+            "GunName": "BasicBullet",
+            "PathName": "Path01",
+            "ScorePoints": 10,
+            "Health": 1
+        },
+        {
+            "Name": "enemy01-path02",
+            "ResourcePath": "Assets/Resources/Prefabs/Enemy01.prefab",
+            "Speed": 2,
+            "GunName": "BasicBullet",
+            "PathName": "Path02",
+            "ScorePoints": 10,
+            "Health": 1
+        },
+        {
+            "Name": "enemy01-path03",
+            "ResourcePath": "Assets/Resources/Prefabs/Enemy01.prefab",
+            "Speed": 2,
+            "GunName": "BasicBullet",
+            "PathName": "Path03",
+            "ScorePoints": 10,
+            "Health": 1
+        },
+        {
+            "Name": "enemy01-path04",
+            "ResourcePath": "Assets/Resources/Prefabs/Enemy01.prefab",
+            "Speed": 2,
+            "GunName": "BasicBullet",
+            "PathName": "Path04",
+            "ScorePoints": 10,
+            "Health": 1
+        },
+        {
+            "Name": "enemy02-path01",
+            "ResourcePath": "Assets/Resources/Prefabs/Enemy02.prefab",
+            "Speed": 3,
+            "GunName": "BasicBullet",
+            "PathName": "Path01",
+            "ScorePoints": 20,
+            "Health": 1
+        },
+        {
+            "Name": "enemy02-path02",
+            "ResourcePath": "Assets/Resources/Prefabs/Enemy02.prefab",
+            "Speed": 3,
+            "GunName": "BasicBullet",
+            "PathName": "Path02",
+            "ScorePoints": 20,
+            "Health": 1
+        },
+        {
+            "Name": "enemy02-path03",
+            "ResourcePath": "Assets/Resources/Prefabs/Enemy02.prefab",
+            "Speed": 3,
+            "GunName": "BasicBullet",
+            "PathName": "Path03",
+            "ScorePoints": 20,
+            "Health": 1
+        },
+        {
+            "Name": "enemy02-path04",
+            "ResourcePath": "Assets/Resources/Prefabs/Enemy02.prefab",
+            "Speed": 3,
+            "GunName": "BasicBullet",
+            "PathName": "Path04",
+            "ScorePoints": 20,
+            "Health": 1
+        },
+        {
+            "Name": "enemy03-path01",
+            "ResourcePath": "Assets/Resources/Prefabs/Enemy03.prefab",
+            "Speed": 4,
+            "GunName": "BasicBullet",
+            "PathName": "Path01",
+            "ScorePoints": 30,
+            "Health": 1
+        },
+        {
+            "Name": "enemy03-path02",
+            "ResourcePath": "Assets/Resources/Prefabs/Enemy03.prefab",
+            "Speed": 4,
+            "GunName": "BasicBullet",
+            "PathName": "Path02",
+            "ScorePoints": 30,
+            "Health": 1
+        },
+        {
+            "Name": "enemy03-path03",
+            "ResourcePath": "Assets/Resources/Prefabs/Enemy03.prefab",
+            "Speed": 4,
+            "GunName": "BasicBullet",
+            "PathName": "Path03",
+            "ScorePoints": 30,
+            "Health": 1
+        },
+        {
+            "Name": "enemy03-path04",
+            "ResourcePath": "Assets/Resources/Prefabs/Enemy03.prefab",
+            "Speed": 4,
+            "GunName": "BasicBullet",
+            "PathName": "Path04",
+            "ScorePoints": 30,
+            "Health": 1
+        },
+        {
+            "Name": "enemy04-path01",
+            "ResourcePath": "Assets/Resources/Prefabs/Enemy04.prefab",
+            "Speed": 5,
+            "GunName": "BasicBullet",
+            "PathName": "Path01",
+            "ScorePoints": 40,
+            "Health": 1
+        },
+        {
+            "Name": "enemy04-path02",
+            "ResourcePath": "Assets/Resources/Prefabs/Enemy04.prefab",
+            "Speed": 5,
+            "GunName": "BasicBullet",
+            "PathName": "Path02",
+            "ScorePoints": 40,
+            "Health": 1
+        },
+        {
+            "Name": "enemy04-path03",
+            "ResourcePath": "Assets/Resources/Prefabs/Enemy04.prefab",
+            "Speed": 5,
+            "GunName": "BasicBullet",
+            "PathName": "Path03",
+            "ScorePoints": 40,
+            "Health": 1
+        },
+        {
+            "Name": "enemy04-path04",
+            "ResourcePath": "Assets/Resources/Prefabs/Enemy04.prefab",
+            "Speed": 5,
+            "GunName": "BasicBullet",
+            "PathName": "Path04",
+            "ScorePoints": 40,
+            "Health": 1
+        },
+        {
+            "Name": "Boss01",
+            "ResourcePath": "Assets/Resources/Prefabs/Boss01.prefab",
+            "Speed": 1,
+            "GunName": "BossBullets",
+            "PathName": "BossPath",
+            "ScorePoints": 1000,
+            "Health": 10
+        }
+    ],
+    "AllGuns": [
+        {
+            "Name": "BasicBullet",
+            "ResourcePath": "Assets/Resources/Prefabs/Bullet01.prefab",
+            "Damage": 1,
+            "AmountBullets": 1,
+            "ToPosition": 85,
+            "Speed": 2
+        },
+        {
+            "Name": "BossBullets",
+            "ResourcePath": "Assets/Resources/Prefabs/Bullet01.prefab",
+            "Damage": 1,
+            "AmountBullets": 3,
+            "ToPosition": 85,
+            "Speed": 3
+        }
+    ],
+    "AllPowerUps": [
+        {
+            "Name": "PowerUpPow",
+            "ResourcePath": "Assets/Resources/Prefabs/PowerUpPow.prefab",
+            "FromPosition": 7,
+            "ToPosition": 79
+        }
+    ],
+    "AllPaths": [
+        {
+            "Name": "Path01",
+            "SpawnPosition": 2,
+            "WayPoints": [
+                {
+                    "Position": 38,
+                    "Action": 0
+                },
+                {
+                    "Position": 42,
+                    "Action": 1
+                },
+                {
+                    "Position": 6,
+                    "Action": 0
+                }
+            ]
+        },
+        {
+            "Name": "Path02",
+            "SpawnPosition": 9,
+            "WayPoints": [
+                {
+                    "Position": 14,
+                    "Action": 0
+                },
+                {
+                    "Position": 41,
+                    "Action": 1
+                },
+                {
+                    "Position": 38,
+                    "Action": 0
+                },
+                {
+                    "Position": 2,
+                    "Action": 0
+                }
+            ]
+        },
+        {
+            "Name": "Path03",
+            "SpawnPosition": 26,
+            "WayPoints": [
+                {
+                    "Position": 49,
+                    "Action": 1
+                },
+                {
+                    "Position": 18,
+                    "Action": 0
+                }
+            ]
+        },
+        {
+            "Name": "Path04",
+            "SpawnPosition": 5,
+            "WayPoints": [
+                {
+                    "Position": 22,
+                    "Action": 1
+                },
+                {
+                    "Position": 56,
+                    "Action": 0
+                },
+                {
+                    "Position": 54,
+                    "Action": 0
+                }
+            ]
+        },
+        {
+            "Name": "BossPath",
+            "SpawnPosition": 78,
+            "WayPoints": [
+                {
+                    "Position": 69,
+                    "Action": 1
+                },
+                {
+                    "Position": 60,
+                    "Action": 1
+                },
+                {
+                    "Position": 51,
+                    "Action": 1
+                },
+                {
+                    "Position": 42,
+                    "Action": 1
+                },
+                {
+                    "Position": 33,
+                    "Action": 1
+                },
+                {
+                    "Position": 32,
+                    "Action": 1
+                },
+                {
+                    "Position": 31,
+                    "Action": 1
+                },
+                {
+                    "Position": 30,
+                    "Action": 1
+                },
+                {
+                    "Position": 29,
+                    "Action": 1
+                },
+                {
+                    "Position": 27,
+                    "Action": 0
+                }
+            ]
+        }
+    ],
+    "AllLevels": [
+        {
+            "Rounds": 10,
+            "PowerUps": 1,
+            "EnemiesList": [
+                {
+                    "Delay": 5.0,
+                    "EnemyName": "enemy01-path01",
+                    "Count": 6,
+                    "InstantiationInterval": 0.38600000739097597
+                },
+                {
+                    "Delay": 1.3899999856948853,
+                    "EnemyName": "enemy02-path02",
+                    "Count": 5,
+                    "InstantiationInterval": 0.40299999713897707
+                },
+                {
+                    "Delay": 2.180000066757202,
+                    "EnemyName": "enemy01-path03",
+                    "Count": 3,
+                    "InstantiationInterval": 0.42100000381469729
+                },
+                {
+                    "Delay": 1.1100000143051148,
+                    "EnemyName": "enemy02-path04",
+                    "Count": 5,
+                    "InstantiationInterval": 0.5419999957084656
+                },
+                {
+                    "Delay": 2.0799999237060549,
+                    "EnemyName": "enemy01-path03",
+                    "Count": 8,
+                    "InstantiationInterval": 0.4749999940395355
+                },
+                {
+                    "Delay": 1.0,
+                    "EnemyName": "enemy02-path02",
+                    "Count": 4,
+                    "InstantiationInterval": 0.5239999890327454
+                },
+                {
+                    "Delay": 0.8700000047683716,
+                    "EnemyName": "enemy01-path01",
+                    "Count": 5,
+                    "InstantiationInterval": 0.5139999985694885
+                },
+                {
+                    "Delay": 1.0700000524520875,
+                    "EnemyName": "enemy02-path04",
+                    "Count": 8,
+                    "InstantiationInterval": 0.5569999814033508
+                },
+                {
+                    "Delay": 1.0800000429153443,
+                    "EnemyName": "enemy01-path02",
+                    "Count": 4,
+                    "InstantiationInterval": 0.5329999923706055
+                },
+                {
+                    "Delay": 1.1799999475479127,
+                    "EnemyName": "enemy03-path04",
+                    "Count": 2,
+                    "InstantiationInterval": 0.46399998664855959
+                }
+            ]
+        },
+        {
+            "Rounds": 15,
+            "PowerUps": 1,
+            "EnemiesList": [
+                {
+                    "Delay": 1.3799999952316285,
+                    "EnemyName": "enemy02-path01",
+                    "Count": 5,
+                    "InstantiationInterval": 0.36399999260902407
+                },
+                {
+                    "Delay": 1.559999942779541,
+                    "EnemyName": "enemy02-path03",
+                    "Count": 9,
+                    "InstantiationInterval": 0.3970000147819519
+                },
+                {
+                    "Delay": 1.4600000381469727,
+                    "EnemyName": "enemy01-path04",
+                    "Count": 11,
+                    "InstantiationInterval": 0.3580000102519989
+                },
+                {
+                    "Delay": 1.2899999618530274,
+                    "EnemyName": "enemy03-path02",
+                    "Count": 6,
+                    "InstantiationInterval": 0.2840000092983246
+                },
+                {
+                    "Delay": 1.649999976158142,
+                    "EnemyName": "Boss01",
+                    "Count": 1,
+                    "InstantiationInterval": 0.20000000298023225
+                },
+                {
+                    "Delay": 1.5099999904632569,
+                    "EnemyName": "enemy03-path02",
+                    "Count": 9,
+                    "InstantiationInterval": 0.3619999885559082
+                },
+                {
+                    "Delay": 1.340000033378601,
+                    "EnemyName": "enemy01-path03",
+                    "Count": 5,
+                    "InstantiationInterval": 0.29499998688697817
+                },
+                {
+                    "Delay": 1.649999976158142,
+                    "EnemyName": "enemy01-path02",
+                    "Count": 4,
+                    "InstantiationInterval": 0.38999998569488528
+                },
+                {
+                    "Delay": 1.7699999809265137,
+                    "EnemyName": "enemy03-path03",
+                    "Count": 9,
+                    "InstantiationInterval": 0.45500001311302187
+                },
+                {
+                    "Delay": 1.850000023841858,
+                    "EnemyName": "enemy01-path04",
+                    "Count": 4,
+                    "InstantiationInterval": 0.4099999964237213
+                },
+                {
+                    "Delay": 1.2100000381469727,
+                    "EnemyName": "enemy02-path02",
+                    "Count": 7,
+                    "InstantiationInterval": 0.28200000524520876
+                },
+                {
+                    "Delay": 1.5399999618530274,
+                    "EnemyName": "enemy02-path04",
+                    "Count": 7,
+                    "InstantiationInterval": 0.3880000114440918
+                },
+                {
+                    "Delay": 1.4700000286102296,
+                    "EnemyName": "enemy03-path04",
+                    "Count": 5,
+                    "InstantiationInterval": 0.38999998569488528
+                },
+                {
+                    "Delay": 1.1200000047683716,
+                    "EnemyName": "enemy01-path01",
+                    "Count": 11,
+                    "InstantiationInterval": 0.48100000619888308
+                },
+                {
+                    "Delay": 2.5899999141693117,
+                    "EnemyName": "enemy03-path01",
+                    "Count": 10,
+                    "InstantiationInterval": 0.3919999897480011
+                }
+            ]
+        },
+        {
+            "Rounds": 20,
+            "PowerUps": 2,
+            "EnemiesList": [
+                {
+                    "Delay": 0.5,
+                    "EnemyName": "enemy04-path01",
+                    "Count": 5,
+                    "InstantiationInterval": 0.5
+                },
+                {
+                    "Delay": 0.5,
+                    "EnemyName": "enemy04-path02",
+                    "Count": 5,
+                    "InstantiationInterval": 0.5
+                },
+                {
+                    "Delay": 0.5,
+                    "EnemyName": "enemy04-path04",
+                    "Count": 5,
+                    "InstantiationInterval": 0.5
+                },
+                {
+                    "Delay": 0.5,
+                    "EnemyName": "enemy02-path03",
+                    "Count": 5,
+                    "InstantiationInterval": 0.30000001192092898
+                },
+                {
+                    "Delay": 0.5,
+                    "EnemyName": "enemy03-path02",
+                    "Count": 5,
+                    "InstantiationInterval": 0.30000001192092898
+                },
+                {
+                    "Delay": 1.2899999618530274,
+                    "EnemyName": "enemy04-path03",
+                    "Count": 1,
+                    "InstantiationInterval": 0.5
+                },
+                {
+                    "Delay": 0.5,
+                    "EnemyName": "Boss01",
+                    "Count": 1,
+                    "InstantiationInterval": 0.30000001192092898
+                },
+                {
+                    "Delay": 0.5,
+                    "EnemyName": "enemy01-path01",
+                    "Count": 5,
+                    "InstantiationInterval": 0.30000001192092898
+                },
+                {
+                    "Delay": 0.5,
+                    "EnemyName": "enemy01-path01",
+                    "Count": 5,
+                    "InstantiationInterval": 0.30000001192092898
+                },
+                {
+                    "Delay": 0.5,
+                    "EnemyName": "enemy04-path01",
+                    "Count": 5,
+                    "InstantiationInterval": 0.5
+                },
+                {
+                    "Delay": 0.5,
+                    "EnemyName": "enemy04-path04",
+                    "Count": 5,
+                    "InstantiationInterval": 0.5
+                },
+                {
+                    "Delay": 0.5,
+                    "EnemyName": "enemy02-path02",
+                    "Count": 5,
+                    "InstantiationInterval": 0.30000001192092898
+                },
+                {
+                    "Delay": 0.5,
+                    "EnemyName": "enemy01-path02",
+                    "Count": 5,
+                    "InstantiationInterval": 0.30000001192092898
+                },
+                {
+                    "Delay": 0.5,
+                    "EnemyName": "enemy02-path04",
+                    "Count": 5,
+                    "InstantiationInterval": 0.30000001192092898
+                },
+                {
+                    "Delay": 0.5,
+                    "EnemyName": "enemy01-path01",
+                    "Count": 5,
+                    "InstantiationInterval": 0.30000001192092898
+                },
+                {
+                    "Delay": 0.5,
+                    "EnemyName": "enemy03-path02",
+                    "Count": 5,
+                    "InstantiationInterval": 0.30000001192092898
+                },
+                {
+                    "Delay": 0.5,
+                    "EnemyName": "enemy04-path02",
+                    "Count": 5,
+                    "InstantiationInterval": 0.5
+                },
+                {
+                    "Delay": 0.5,
+                    "EnemyName": "enemy02-path02",
+                    "Count": 5,
+                    "InstantiationInterval": 0.30000001192092898
+                },
+                {
+                    "Delay": 0.5,
+                    "EnemyName": "enemy02-path01",
+                    "Count": 5,
+                    "InstantiationInterval": 0.30000001192092898
+                },
+                {
+                    "Delay": 0.5,
+                    "EnemyName": "enemy04-path03",
+                    "Count": 5,
+                    "InstantiationInterval": 0.5
+                }
+            ]
+        }
+    ]
+}
