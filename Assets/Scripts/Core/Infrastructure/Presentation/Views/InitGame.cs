@@ -49,7 +49,6 @@ namespace Core.Infrastructure.Presentation.Views
                     GameProvider.ProvideClearDBs().Execute();
                     ScrollingBackground.Reset();
                     ScrollingBackground.StartMovement();
-                    GameOverScreenPrefab.SetActive(false);
                     InstantiateGame();
                 });
         }
